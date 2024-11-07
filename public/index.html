@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JATIC Toolkit Overview</title>
+      <link rel="stylesheet" href="assets/styles.css">
+   </head>
+   <body>
+        <header>
+        <nav class="navbar">
+        <ul>
+            <li><a href="#rai-toolbox">RAI Toolbox</a></li>
+            <li><a href="#adversarial-robustness">Adversarial Robustness Toolbox</a></li>
+            <li><a href="#nebari">Nebari</a></li>
+            <li><a href="#armory">Armory</a></li>
+            <li><a href="#dataeval">DataEval</a></li>
+            <li><a href="#xaitk">XAITK</a></li>
+            <li><a href="#nrtk">NRTK</a></li>
+            <li><a href="#maite">JATIC Toolbox (MAITE)</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        </nav>
+    </header>
+      <div class="container">
+         <h1>CDAO JATIC</h1>
+<p class="blurb">
+    The Joint AI Test Infrastructure Capability (JATIC) provides essential tools for testing and evaluating AI models across the Department of Defense. Learn more about how JATIC accelerates AI adoption with robust, reproducible, and scalable solutions.
+    <a href="https://cdao.pages.jatic.net/public/" target="_blank">Explore JATIC</a>.
+</p>
+         <!-- RAI Toolbox Section -->
+         <section id="rai-toolbox">
+         <div class="category-container">
+            <div class="category-title">RAI Toolbox</div>
+            <div class="filter-container">
+               <label for="filter">Filter by Type: </label>
+               <select id="filter" onchange="filterCards()">
+                  <option value="all">All</option>
+                  <option value="python library">Python Library</option>
+                  <option value="web-app">Web App</option>
+                  <option value="java/docker">Java/Docker</option>
+                  <option value="document">Document</option>
+                  <option value="website">Website</option>
+                  <option value="datasets">Datasets</option>
+               </select>
+            </div>
+            <div class="scrollable-grid-container">
+               <div class="grid" id="cardGrid">
+                  <!-- Each card includes a hidden flag field for filtering -->
+                  <div class="card" data-flag="python library">
+                     <h2>Armory Testbed</h2>
+                     <a href="https://github.com/twosixlabs/armory" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>Bias and Fairness Audit</h2>
+                     <a href="https://github.com/dssg/aequitas" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="web-app">
+                     <h2>Carbon Emissions Calculator</h2>
+                     <a href="https://github.com/mlco2/impact" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>CounterFit</h2>
+                     <a href="https://github.com/Azure/counterfit/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>Diverse Counterfactual Explanations (DiCE)</h2>
+                     <a href="https://github.com/interpretml/DiCE" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>Drift Tools</h2>
+                     <a href="https://github.com/SeldonIO/alibi-detect" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>EQUI(NE2)</h2>
+                     <a href="https://github.com/mit-ll-responsible-ai/equine" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library/web-app">
+                     <h2>ExplainerDashboard</h2>
+                     <a href="https://github.com/oegedijk/explainerdashboard" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>FairML</h2>
+                     <a href="https://github.com/adebayoj/fairml" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>FoolBox</h2>
+                     <a href="https://github.com/bethgelab/foolbox" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>IBM Adversarial Robustness 360 Attacks</h2>
+                     <a href="https://github.com/Trusted-AI/adversarial-robustness-toolbox" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>IBM Adversarial Robustness 360 Defenses</h2>
+                     <a href="https://github.com/Trusted-AI/adversarial-robustness-toolbox" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>IBM Adversarial Robustness 360 Estimators</h2>
+                     <a href="https://github.com/Trusted-AI/adversarial-robustness-toolbox" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="java/docker">
+                     <h2>IBM Data Privacy Toolkit</h2>
+                     <a href="https://github.com/IBM/data-privacy-toolkit/tree/main" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>IBM Explainability 360</h2>
+                     <a href="https://github.com/Trusted-AI/AIX360" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>IBM Uncertainty Quantification 360</h2>
+                     <a href="https://github.com/IBM/UQ360" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>InterpretML</h2>
+                     <a href="https://github.com/interpretml/interpret/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>LIME</h2>
+                     <a href="https://github.com/marcotcr/lime" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library/R">
+                     <h2>Model Agnostic Language for Exploration and Explanation (DALEX)</h2>
+                     <a href="https://github.com/ModelOriented/DALEX" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>Python Outlier Detection (PyOD)</h2>
+                     <a href="https://github.com/yzhao062/pyod" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>SHAP</h2>
+                     <a href="https://github.com/slundberg/shap" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>ShapASH</h2>
+                     <a href="https://github.com/MAIF/shapash" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>SmartNoise</h2>
+                     <a href="https://github.com/opendp/smartnoise-sdk" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library/web-app">
+                     <h2>System Auditing Tools</h2>
+                     <a href="https://github.com/StanfordHCI/indie-label" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library/web-app">
+                     <h2>TensorFlow Fairness Indicators</h2>
+                     <a href="https://github.com/tensorflow/fairness-indicators" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library">
+                     <h2>TensorFlow Model Remediation</h2>
+                     <a href="https://github.com/tensorflow/model-remediation" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library/web-app">
+                     <h2>What-If Tool</h2>
+                     <a href="https://github.com/PAIR-code/what-if-tool" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="python library/web-app">
+                     <h2>XAI kit - Saliency</h2>
+                     <a href="https://github.com/XAITK/xaitk-saliency" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>ALICE</h2>
+                     <a href="https://github.com/vickraj/ALICE" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>Aether Datasheet Template</h2>
+                     <a href="https://www.microsoft.com/en-us/research/uploads/prod/2022/07/aether-datadoc-082522.pdf" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website">
+                     <h2>AI Incidents Database</h2>
+                     <a href="https://incidentdatabase.ai/about/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="datasets">
+                     <h2>Baseline Data Sets</h2>
+                     <a href="https://wilds.stanford.edu/datasets/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Cognitive Biases Resource</h2>
+                     <a href="https://www.visualcapitalist.com/50-cognitive-biases-in-the-modern-world/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>CONOPS Examples/Templates</h2>
+                     <a href="https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/CONOPS_Example_3.0.pdf" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>Crowdsourcing Model Bias Tools</h2>
+                     <a href="https://arxiv.org/pdf/1812.08769.pdf" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>DAGR</h2>
+                     <a href="https://rai.tradewindai.com/appendix/dagr" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website">
+                     <h2>Design Kit Inspiration Methods</h2>
+                     <a href="https://www.designkit.org/methods.html" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>DIU Worksheets</h2>
+                     <a href="https://assets.ctfassets.net/3nanhbfkr0pc/1vJvimVkijueLbJzqcaOMr/691bcab582aafeb6de3f18b9266a6294/Planning_Worksheet_DIU-AI_Guidelines.pdf" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Domain Generalization Dataset List</h2>
+                     <a href="https://arxiv.org/pdf/2103.02503.pdf" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>Failure Modes Resources</h2>
+                     <a href="https://learn.microsoft.com/en-us/security/engineering/failure-modes-in-machine-learning#how-to-use-this-document" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Feature Release Rollback Resource</h2>
+                     <a href="https://cloud.google.com/blog/products/gcp/reliable-releases-and-rollbacks-cre-life-lessons" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Framework for Ethical Decision Making</h2>
+                     <a href="https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/introduction-to-a-framework-for-ethical-decision-making/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>GameChanger Policy Database</h2>
+                     <a href="https://wiki.advana.data.mil/display/SDKB/GAMECHANGER+User+Guide" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>HSI Guidebook Docs</h2>
+                     <a href="https://www.ida.org/-/media/feature/publications/d/da/dataworks-2021-characterizing-human-machine-teaming-metrics-for-test-and-evaluation/d-21564.ashx" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Hugging Face Data Card Template</h2>
+                     <a href="https://huggingface.co/docs/datasets/dataset_card" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Hugging Face Model Card Template</h2>
+                     <a href="https://huggingface.co/blog/model-cards" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>Human-Machine Teaming Systems Engineering Guide</h2>
+                     <a href="https://www.mitre.org/sites/default/files/2021-11/prs-17-4208-human-machine-teaming-systems-engineering-guide.pdf" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>Impact Assessment Tools</h2>
+                     <a href="https://www.adalovelaceinstitute.org/resource/aia-user-guide/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website">
+                     <h2>Impact Goals</h2>
+                     <a href="https://methods.18f.gov/discover/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document">
+                     <h2>Machine Learning Suitability Checklist</h2>
+                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7871244/" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="document/website">
+                     <h2>Model Card Examples</h2>
+                     <a href="https://modelcards.withgoogle.com/about" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website/document">
+                     <h2>Robustness Tools</h2>
+                     <a href="https://arxiv.org/abs/1912.08166" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website/document">
+                     <h2>Root Cause Analysis</h2>
+                     <a href="https://www.health.state.mn.us/facilities/patientsafety/adverseevents/toolkit/index.html" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website">
+                     <h2>Stakeholder Engagement Toolkit</h2>
+                     <a href="https://www.ibm.com/design/thinking/page/toolkit" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website">
+                     <h2>Stakeholder Mapping Template</h2>
+                     <a href="https://www.mural.co/blog/stakeholder-mapping" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website/document">
+                     <h2>Threat Modeling Resource</h2>
+                     <a href="https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml?source=recommendations" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website/document">
+                     <h2>Trust in Autonomous Systems Test</h2>
+                     <a href="https://www.ida.org/-/media/feature/publications/p/pr/predicting-trust-in-automated-systems---validation-of-the-trust-of-automated-systems-test---toast/d-33088.ashx" target="_blank">Learn More</a>
+                  </div>
+                  <div class="card" data-flag="website">
+                     <h2>Use-Case Analysis/Workflow Mapping</h2>
+                     <a href="https://www.usability.gov/how-to-and-tools/methods/use-cases.html" target="_blank">Learn More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </section>
+         <!-- Nebari Section -->
+<section id="nebari">
+    <div class="category-container">
+        <div class="category-title">Nebari</div>
+        <div class="single-card-container">
+            <div class="card">
+                <h2>Nebari</h2>
+                <p>
+                    Nebari is an open-source data platform that automates the deployment of scalable and cost-effective data science environments. It integrates JupyterHub, Cloud environments, and Dask Gateway to streamline workflows for both HPC and Kubernetes setups.
+                </p>
+                <p>
+                    With minimal DevOps overhead, Nebari enables teams to focus on data science tasks while maintaining robust and flexible infrastructure.
+                </p>
+                <a href="https://github.com/nebari-dev" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+         <!-- Adversarial Robustness Toolbox Section -->
+         <section id="adversarial-robustness">
+         <div class="category-container">
+            <div class="category-title">Adversarial Robustness Toolbox</div>
+            <div class="single-card-container">
+               <div class="card">
+                  <h2>Adversarial Robustness Toolbox</h2>
+                  <p>The Adversarial Robustness Toolbox (ART) is an open-source Python library designed to assist developers and researchers in building robust and trustworthy machine learning models. It provides tools for defending against adversarial attacks, testing model vulnerabilities, and improving robustness.</p>
+                  <a href="https://github.com/Trusted-AI/adversarial-robustness-toolbox" target="_blank">Learn More</a>
+               </div>
+            </div>
+         </div>
+         </section>
+         <!-- Armory Section -->
+         <section id="armory">
+         <div class="category-container">
+            <div class="category-title">Armory</div>
+            <div class="single-card-container">
+               <div class="card">
+                  <h2>Armory</h2>
+                  <p>Armory is a testbed designed to run scalable evaluations of adversarial defenses in machine learning. It facilitates reproducible research by providing configurable Docker environments for testing models under adversarial conditions. Armory integrates with the Adversarial Robustness Toolbox (ART), allowing flexible combinations of attacks and defenses.</p>
+                  <p><strong>Note:</strong> This repository, GARD-Armory, is specific to the DARPA GARD research program. For the actively maintained version, refer to <a href="https://github.com/twosixlabs/armory-library" target="_blank">Armory Library</a>.</p>
+                  <a href="https://github.com/twosixlabs/armory" target="_blank">Learn More</a>
+               </div>
+            </div>
+         </div>
+         </section>
+         <section id="dataeval">
+    <div class="category-container">
+        <div class="category-title">DataEval</div>
+        <div class="single-card-container">
+            <div class="card">
+                <h2>DataEval</h2>
+                <p>DataEval focuses on characterizing image data and its impact on model performance across classification and object-detection tasks.</p>
+                <h3>Data Analytics</h3>
+                <p>
+                    The scope of data analytics is very broad, but as DataEval is developed, we look for impactful metrics as guides towards feature development.
+                </p>
+                <ul>
+                    <li><strong>Model-agnostic metrics</strong>: relevance/completeness/coverage, metafeatures (data complexity)</li>
+                    <li><strong>Model-specific metrics</strong>: dataset sufficiency, data/model complexity mismatch</li>
+                    <li><strong>Post-deployment monitoring metrics</strong>: dataset-shift metrics, model performance bounds under covariate shift</li>
+                </ul>
+                <p>
+                    These metrics guide model error assessment, retraining strategies, and provide bounds on model performance under changing data conditions.
+                </p>
+                <a href="https://github.com/aria-ml/dataeval" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- XAITK Section -->
+<section id="xaitk">
+    <div class="category-container">
+        <div class="category-title">Explainable AI Toolkit (XAITK)</div>
+        <div class="single-card-container">
+            <div class="card">
+                <h2>XAITK</h2>
+                <p>
+                    The Explainable AI Toolkit (XAITK) contains a variety of tools and resources to help users, developers, and researchers understand complex machine learning models. The toolkit combines a searchable repository of independent contributions and a more integrated, common software framework. 
+                </p>
+                <p>
+                    The toolkit was developed under the Defense Advanced Research Projects Agency (DARPA) Explainable Artificial Intelligence (XAI) program.
+                </p>
+                <a href="https://github.com/XAITK/xaitk-saliency" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- NRTK Section -->
+<section id="nrtk">
+    <div class="category-container">
+        <div class="category-title">Natural Robustness Toolkit (NRTK)</div>
+        <div class="single-card-container">
+            <div class="card">
+                <h2>NRTK</h2>
+                <p>
+                    The <strong>nrtk</strong> package is an open-source toolkit for evaluating the natural robustness of computer vision algorithms to various perturbations, including sensor-specific changes to camera focal length, aperture diameter, and more. 
+                </p>
+                <p>
+                    Functionality is provided through Strategy and Adapter patterns to allow for modular integration into systems and applications.
+                </p>
+                <p>
+                    The <strong>nrtk-jatic</strong> package supports AI T&E use-cases and workflows, through interoperability with the maite library and integration with other JATIC tools. Users seeking to use NRTK to perturb MAITE-wrapped datasets or evaluate MAITE-wrapped models should start with the nrtk-jatic package.
+                </p>
+                <a href="https://github.com/Kitware/nrtk" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- JATIC Toolbox (MAITE) Section -->
+<section id="maite">
+    <div class="category-container">
+        <div class="category-title">JATIC Toolbox (MAITE)</div>
+        <div class="single-card-container">
+            <div class="card">
+                <h2>MAITE (Modular AI Trustworthy Engineering)</h2>
+                <p>
+                    MAITE is a library of common types, protocols, and utilities designed for the test and evaluation (T&E) of supervised machine learning models. It supports seamless workflows across JATIC projects by providing essential components for synergistic integration.
+                </p>
+                <p>
+                    Developed under the JATIC program, MAITE eliminates redundancies and reduces the burden of implementing shared functionalities in machine learning T&E. The library is lightweight, frequently updated, and ensures compatibility with other JATIC tools.
+                </p>
+                <a href="https://github.com/mit-ll-ai-technology/maite" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+      </div>
+      </div>
+      </div>
+      <script src="assets/script.js"></script>
+   </body>
+</html>
